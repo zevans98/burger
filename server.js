@@ -21,6 +21,8 @@ app.set('view engine', 'handlebars');
 
 
 var router = require('./controllers/burgers_controller');
+var dotenv = require("dotenv").config();
+
 app.use('/', router);
 
 
